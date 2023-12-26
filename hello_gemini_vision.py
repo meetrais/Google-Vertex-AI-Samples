@@ -11,3 +11,8 @@ model = genai.GenerativeModel('gemini-pro-vision')
 response = model.generate_content(img)
 
 print(response.text)
+print("===========================================================================================")
+response = model.generate_content(["Write a short, engaging blog post based on this picture. It should include a description of the meal in the photo and talk about my journey meal prepping.", img], stream=True)
+response.resolve()
+
+print(response.text)
