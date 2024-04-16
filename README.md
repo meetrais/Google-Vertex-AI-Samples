@@ -1,1 +1,1 @@
-# google-gemini-api
+# Google-Vertex-AI-Samples
